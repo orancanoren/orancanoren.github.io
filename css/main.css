@@ -1,0 +1,19 @@
+#oname {
+  font-weight: 100;
+  font-size: 34px;
+  color: black;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+#info_card {
+  margin-top: 30px;
+}
