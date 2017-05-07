@@ -14,60 +14,88 @@
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function() {
+    $('.parallax').parallax();
+  });
+  </script>
 
   <!-- navbar -->
   <head>
-    <nav class="white z-depth-0">
-      <div class="nav-wrapper">
-        <span class="brand-logo center" id="oname">Oran Can Ören</span>
+    <nav class="z-depth-2">
+      <div class="nav-wrapper white">
+        <span class="brand-logo center black-text" id="navTitle">Home</span>
       </div>
     </nav>
   </head>
 
   <!-- main -->
+  <!-- parallax 1 -->
   <main>
-    <div class="container center">
-      <span>Algorithms &#9679 Data Science &#9679 Design </span>
+    <div class="parallax-container" id="para">
+      <div class="section no-pad-bot">
+        <br /><br />
+          <div class="container valign-wrapper center-block">
+            <div class="row">
+              <div class="col s12 center">
+                <div id="nameBox">
+                  <h1 class="header black-text" id="introName">ORAN CAN ÖREN</h1>
+                </div>
+                <p class="flow-text grey-text text-darken-3" id="description">Algorithms &#9679 Data Science &#9679 Design</p>
+              </div>
+          </div>
+          <div class="parallax" id="agif"><img src="images/abstract.gif"/></div>
+        </div>
+      </div>
     </div>
 
-    <div class="row" id="info_card">
-      <div class="col s6 push-s3">
-        <div class="card white medium">
-          <div class="card-content black-text">
-            <div class="row valign-wrapper">
-              <div class="col s4">
-                <img src="./image/pp-min.jpg" alt="" class="circle responsive-img" />
-              </div>
-              <div class="col s8">
-                  <p class="flow-text">My personal homepage</p>
-                    <div class="divider"></div>
-                    <p class="flow-text right grey-text">Coming soon</p>
-              </div>
+    <!-- showcase -->
+    <div class="section white" id="cover">
+      <div class="container black-text">
+        <div class="row">
+          <div class="col s4 center">
+            <div class="card-panel hoverable green-text text-accent-3" id="resumeCard">
+              <i class="large material-icons">description</i><br />
+              <h5>Resume</h5>
+              <p class="grey-text">Yesterday</p>
+            </div>
+          </div>
+          <div class="col s4 center">
+            <div class="card-panel hoverable blue-text text-lighten-1" id="projectsCard">
+              <i class="large material-icons">code</i><br />
+              <h5>Projects</h5>
+              <p class="grey-text">Today</p>
+            </div>
+          </div>
+          <div class="col s4 center">
+            <div class="card-panel hoverable purple-text text-lighten-1" id="aboutCard">
+              <i class="large material-icons">perm_identity</i><br />
+              <h5>About Oran Can</h5>
+              <p class="grey-text">Tomorrow</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+      <!-- parallax 2 -->
   </main>
 
   <!-- footer -->
   <footer class="page-footer indigo darken-1">
     <div class="container">
       <div class="row">
-        <h5 class="white-text">Oran Can Ören</h5>
-        <p class="grey-text text-lighten-4">
-          Computer Science Undergrad at Sabancı University
-        </p>
+          <h5 class="white-text">Oran Can Ören</h5>
+          <p class="grey-text text-lighten-4">Personal Homepage</p>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <p class="right">
-          Personal Homepage
-        </p>
-
+        <p class="left">Stay as long as you'd like</p>
+        <p class="right">Online since 2017</p>
       </div>
     </div>
   </footer>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

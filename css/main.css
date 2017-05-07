@@ -1,7 +1,17 @@
 #oname {
-  font-weight: 100;
+  font-weight: 400;
   font-size: 34px;
   color: black;
+}
+
+#navTitle {
+  font-weight: 200;
+  font-size: 36px;
+  color: yellow;
+}
+
+#para {
+  height: 400px;
 }
 
 body {
@@ -14,6 +24,24 @@ main {
   flex: 1 0 auto;
 }
 
-#info_card {
-  margin-top: 30px;
+#introName {
+  font-size: 6em;
+  font-weight: 300;
+}
+
+#description {
+  font-weight: 300;
+}
+
+#cover {
+  position: relative;
+  bottom: 0;
+}
+
+.card-panel {
+  cursor: pointer;
+}
+
+#nameBox {
+  border-bottom: 2px solid black;
 }
