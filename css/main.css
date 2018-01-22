@@ -5,13 +5,8 @@
 }
 
 #navTitle {
-  font-weight: 200;
-  font-size: 36px;
-  color: yellow;
-}
-
-#para {
-  height: 55vh;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 body {
@@ -38,10 +33,41 @@ main {
   bottom: 0;
 }
 
+#bold-name {
+  font-weight: 300;
+  font-size: 28px;
+}
+
+p {
+  font-weight: 200;
+}
+
+.sub-text {
+  font-weight: 200;
+  font-size: 16px;
+}
+
 .card-panel {
   cursor: pointer;
 }
 
-#nameBox {
-  border-bottom: 2px solid black;
+.heading {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.parallax-container {
+  height: 200px;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax img {
+    max-height: 140%; /* or a little bit higher */
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .parallax img {
+    max-height: 170%; /* or higher percentages. It's up to your taste */
+  }
 }

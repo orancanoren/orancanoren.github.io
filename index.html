@@ -23,65 +23,92 @@
   </script>
 
   <!-- navbar -->
-  <head>
-    <nav class="z-depth-2">
-      <div class="nav-wrapper white">
-        <span class="brand-logo center black-text" id="navTitle">Home</span>
-      </div>
-    </nav>
-  </head>
+  <header>
+    <div class="navbar">
+      <nav class="z-depth-0">
+          <div class="nav-wrapper white">
+            <div class="container">
+                <span class="brand-logo center black-text" id="navTitle">HOME</span>
+            </div>
+          </div>
+        </nav
+    </div>
+  </header>
 
   <!-- main -->
-  <!-- parallax 1 -->
   <main>
-    <div class="parallax-container" id="para">
-      <div class="section no-pad-bot">
-        <br /><br />
-          <div class="container valign-wrapper center-block">
-            <div class="row">
-              <div class="col s12 center">
-                <div id="nameBox">
-                  <h1 class="header black-text" id="introName">ORAN CAN ÖREN</h1>
-                </div>
-                <p class="flow-text grey-text text-darken-3" id="description">Algorithms &#9679 Data Science &#9679 Design</p>
-              </div>
-          </div>
-          <div class="parallax" id="agif"><img src="images/abstract.gif"/></div>
+    <div class="introduction">
+      <div class="container" style="margin-top: 30px">
+        <div class="center">
+          <span id="bold-name">ORAN CAN ÖREN</span><br />
+          <span class="sub-text">CRYPTOGRAPHY  </span>•
+          <span class="sub-text">  HIGH PERFORMANCE COMPUTING  </span>•
+          <span class="sub-text">  MUSIC</span>
         </div>
       </div>
     </div>
 
-    <!-- showcase -->
-    <div class="section white" id="cover">
-      <div class="container black-text">
-        <div class="row">
-          <div class="col m4 s8 center push-s2 push-m0">
-            <div class="card-panel hoverable green-text text-accent-3" id="resumeCard">
-              <i class="large material-icons">description</i><br />
-              <h5 class="flow-text">Resume</h5>
-              <p class="grey-text">Yesterday</p>
-            </div>
-          </div>
-          <div class="col m4 s8 center push-s2 push-m0">
-            <div class="card-panel hoverable blue-text text-lighten-1" id="projectsCard">
-              <i class="large material-icons">code</i><br />
-              <h5 class="flow-text">Projects</h5>
-              <p class="grey-text">Today</p>
-            </div>
-          </div>
-          <div class="col m4 s8 center push-s2 push-m0">
-            <div class="card-panel hoverable purple-text text-lighten-1" id="aboutCard">
-              <i class="large material-icons">perm_identity</i><br />
-              <h5 class="flow-text">About Oran Can</h5>
-              <p class="grey-text">Tomorrow</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- parallax 1 -->
+    <div class="parallax-container" style="margin-top: 30px">
+      <div class="parallax"><img src="images/collage.png"/></div>
     </div>
 
-      <!-- parallax 2 -->
-  </main>
+      <!-- showcase -->
+    <div style="margin-top: 30px">
+      <div class="center">
+          <span class="heading">FEATURED PROJECTS</span>
+      </div>
+      <div class="container" style="margin-top: 30px">
+        <span class="sub-text">CRYPTOGRAPHIC ALGORITHMS SUITE</span>
+        <table width=100% height=100%>
+          <tr>
+            <td width=50%> <!-- CONTENT INFO -->
+              <p>
+                  Developed pure Python3 implementations of various cryptographic
+                  algorithms. No external dependencies have been used.
+              </p>
+              <ul>
+                  <li>Available block ciphers: DES</li>
+                  <li>Available public-key cryptosystems: ElGamal, RSA</li>
+                  <li>Available secret-key sharing schemes: Diffie-Hellman protocol</li>
+              </ul>
+              <p>
+                AES is currently under development. 
+                OAEP encoding has also been developed and integrated with RSA. 
+              </p>
+            </td>
+            <td width=50%> <!-- CONTENT IMAGE -->
+              <img src="images/cryptosuite.gif" width=100%>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="container" style="margin-top: 30px">
+          <span class="sub-text">PARALLEL HASHCASH</span>
+          <table width=100% height=100%>
+            <tr>
+              <td width=50%> <!-- CONTENT IMAGE -->
+                <img src="images/cryptosuite.gif" width=100%>
+              </td>
+              <td width=50%> <!-- CONTENT INFO -->
+                <p>
+                    Developed Bitcoin hashcash computation tool
+                </p>
+                <ul>
+                  <li>Available block ciphers: DES</li>
+                  <li>Available public-key cryptosystems: ElGamal, RSA</li>
+                  <li>Available secret-key sharing schemes: Diffie-Hellman protocol</li>
+                </ul>
+                <p>
+                  AES is currently under development. 
+                  OAEP encoding has also been developed and integrated with RSA. 
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
+    </div>
+    
 
   <!-- footer -->
   <footer class="page-footer indigo darken-1">
@@ -93,8 +120,8 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-        <p class="left">Stay as long as you'd like</p>
-        <p class="right">Online since 2017</p>
+        <p class="left">Spread the love</p>
+        <p class="right">Sending IPv4 packets across the WWW since 2017</p>
       </div>
     </div>
   </footer>
