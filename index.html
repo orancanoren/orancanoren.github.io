@@ -1,3 +1,10 @@
+<!--
+  ATTENTION
+
+  Since you are here, I strongly suggest you to check out my GitHub repo.
+
+  Thanks for your attention, you may proceed :)
+-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,6 +18,10 @@
   <!--Let browser know website is optimized for mobile-->
   <link type="text/css" rel="stylesheet" href="css/main.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" async src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
 </head>
 <body>
   <!--Import jQuery before materialize.js-->
@@ -59,17 +70,17 @@
           <span class="heading">FEATURED PROJECTS</span>
       </div>
       <div class="container" style="margin-top: 30px">
-        <span class="sub-text">CRYPTOGRAPHIC ALGORITHMS SUITE</span>
+        <span class="sub-text" style="font-weight: 400">CRYPTOGRAPHIC ALGORITHMS SUITE</span>
         <table width=100% height=100%>
           <tr>
             <td width=50%> <!-- CONTENT INFO -->
               <p>
-                  Developed pure Python3 implementations of various cryptographic
-                  algorithms. No external dependencies have been used.
+                  Pure Python3 implementations of various cryptographic
+                  algorithms. No external dependencies!
               </p>
               <ul>
                   <li>Available block ciphers: DES</li>
-                  <li>Available public-key cryptosystems: ElGamal, RSA</li>
+                  <li>Available public-key cryptosystems: El Gamal, RSA</li>
                   <li>Available secret-key sharing schemes: Diffie-Hellman protocol</li>
               </ul>
               <p>
@@ -84,44 +95,96 @@
         </table>
       </div>
       <div class="container" style="margin-top: 30px">
-          <span class="sub-text">PARALLEL HASHCASH</span>
+          <span class="sub-text" style="font-weight: 400">PARALLEL HASHCASH</span>
           <table width=100% height=100%>
             <tr>
               <td width=50%> <!-- CONTENT IMAGE -->
-                <img src="images/cryptosuite.gif" width=100%>
+                $$ H(k + n) = 0...00xxx...$$
               </td>
               <td width=50%> <!-- CONTENT INFO -->
                 <p>
-                    Developed Bitcoin hashcash computation tool
+                    Parallelized Hashcash (i.e. Bitcoin proof-of-work) computation tool.
+                    Parallelization is done on CPU and Nvidia GPU's using OpenMP and CUDA frameworks.
                 </p>
-                <ul>
-                  <li>Available block ciphers: DES</li>
-                  <li>Available public-key cryptosystems: ElGamal, RSA</li>
-                  <li>Available secret-key sharing schemes: Diffie-Hellman protocol</li>
-                </ul>
                 <p>
-                  AES is currently under development. 
-                  OAEP encoding has also been developed and integrated with RSA. 
+                  Uses SHA256 hashing. Thanks to 
+                  <a href="https://github.com/weidai11/cryptopp">Crypto++</a> community for providing
+                  high performance SHA256 implementation.
                 </p>
               </td>
             </tr>
           </table>
         </div>
     </div>
-    
+
+    <!-- parallax 1 -->
+    <div class="parallax-container" style="margin-top: 30px">
+        <div class="parallax"><img src="images/collage.png"/></div>
+    </div>
+
+    <!-- about Oran -->
+    <div class="light-blue darken-4" style="padding-top: 30px; bottom:0; background-color: #08a85d !important">
+      <div class="container">
+        <div class="center">
+          <h6 class="white-text">ABOUT ORAN</h6>
+        </div>
+        <table width=100% height=100%>
+          <tr>
+            <td width=50%>
+              <p class="white-text" style="font-weight: 100">
+                I am a junior student in Sabancı University, majoring in computer science and
+                doing minors in mathematics.
+              </p>
+              <p class="white-text" style="font-weight: 100">
+                I am interested in a broad spectrum of topics around CS: 
+                algorithms/data structures, cryptography, parallel computing,
+                data science/statistics.
+              </p>
+              <p class="white-text" style="font-weight: 100">
+                Aside from my theoretical interests in CS, I am knowledgeable in developing iOS
+                and web applications. My side project, <a href="graphapp.herokuapp.com">Project Hangout</a>
+                involves use of MERN.js stack as well as <a href="https://neo4j.com/">neo4j</a> and PostgreSQL. I am
+                also building an iOS client for it.
+              </p>
+            </td>
+            <td width=50%>
+              <p class="white-text">
+                I started playing the piano in October 2015. I intend to continue learning music and
+                the theory behind it.
+                <a href="https://en.wikipedia.org/wiki/Piano_Sonata_No._8_(Beethoven)">Here</a> is one of my favorite classics.
+              </p>
+              <p class="white-text">
+                I have been involved with electronic music production as well. I've been doing lots of
+                minor mixes here and there. I have a few tracks that I'm working on. You may visit my
+                profile on soundcloud. Hopefully you won't find them awful.
+              </p>
+              <div class="right">
+                <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Forancanoren&color=black_white&size=32" style="width: 32px; height: 32px;"></iframe>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
   <!-- footer -->
-  <footer class="page-footer indigo darken-1">
+  <footer class="page-footer grey darken-4">
     <div class="container">
       <div class="row">
-          <h5 class="white-text">Oran Can Ören</h5>
-          <p class="grey-text text-lighten-4">Personal Homepage</p>
+        <div class="col m6">
+            <h5 class="grey-text text-lighten-1">Oran Can Ören</h5>
+            <p class="grey-text">Personal Homepage</p>
+        </div>
+        <div class="col m6">
+          <h5 class="grey-text text-lighten-1">Links</h5>
+          <a href="orancanoren.com/resume.pdf">Resumé</a>
+        </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
+      <div class="container grey-text">
         <p class="left">Spread the love</p>
-        <p class="right">Sending IPv4 packets across the WWW since 2017</p>
+        <p class="right">Sending IP packets across the WWW since 2017</p>
       </div>
     </div>
   </footer>
