@@ -12,6 +12,7 @@
 body {
   display: flex;
   min-height: 100vh;
+  max-width: 4000px;
   flex-direction: column;
 }
 
