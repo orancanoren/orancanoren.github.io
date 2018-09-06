@@ -70,21 +70,23 @@
           <span class="heading">FEATURED PROJECTS</span>
       </div>
       <div class="container" style="margin-top: 30px">
-        <span class="sub-text" style="font-weight: 400">CRYPTOGRAPHIC ALGORITHMS SUITE</span>
+        <span class="sub-text" style="font-weight: 400">CRYPTORAN</span>
         <table width=100% height=100%>
           <tr>
             <td width=50%> <!-- CONTENT INFO -->
               <p>
-                  Pure Python3 implementations of various cryptographic
-                  algorithms. No external dependencies!
+                  A pure Python 3 cryptographic algorithms library. Available as a command line toolkit and a Python3 package.
               </p>
               <ul>
                   <li>Available block ciphers: AES-128, DES</li>
                   <li>Available public-key cryptosystems: El Gamal, RSA</li>
                   <li>Available secret-key sharing schemes: Diffie-Hellman protocol</li>
+                  <li>Available signatures: RSA signature</li>
               </ul>
               <p>
-                OAEP encoding has also been developed and integrated with RSA. 
+                RSA-OAEP is supported. Block ciphers support CBC and ECB modes of operation.
+                <br/>
+                <p class="view-github"><a href="https://github.com/orancanoren/cryptoran">View on GitHub <img src="images/github-logo.png"/></a></p>
               </p>
             </td>
             <td width=50%> <!-- CONTENT IMAGE -->
@@ -106,15 +108,46 @@
                     Parallelization is done on CPU and Nvidia GPU's using OpenMP and CUDA frameworks.
                 </p>
                 <p>
-                  Uses SHA256 hashing. Thanks to 
-                  <a href="https://github.com/weidai11/cryptopp" target="_blank">Crypto++</a> community for providing
-                  high performance SHA256 implementation.
+
                 </p>
               </td>
             </tr>
           </table>
         </div>
-    </div>
+      </div>
+      <div class="container" style="margin-top: 30px">
+        <span class="sub-text" style="font-weight: 400">PIGEON</span>
+        <table width=100% height=100%>
+          <tr>
+            <td width=50%> <!-- CONTENT INFO -->
+              <p>
+                  Pigeon is a TCP Server-client API implementing TLS through Cryptoran, available as a Python 3 package.
+              </p>
+              <p class="view-github"><a href="https://github.com/orancanoren/pigeon">View on GitHub <img src="images/github-logo.png"/></a></p>
+            </td>
+            <td width=50%> <!-- CONTENT IMAGE -->
+              $$ H(k + n) = 0...00xxx...$$
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="container" style="margin-top: 30px">
+        <span class="sub-text" style="font-weight: 400">LEARNORAN</span>
+        <table width=100% height=100%>
+          <tr>
+            <td width=50%> <!-- CONTENT IMAGE -->
+              $$ H(k + n) = 0...00xxx...$$
+            </td>
+            <td width=50%> <!-- CONTENT INFO -->
+              <p>
+                  A GPU & CPU parallelized machine learning API for C++. Currently it supports multiple regression.
+                  Training is done through stochastic gradient descent. Parallelization is done on CPU and Nvidia GPU's using OpenMP and CUDA frameworks.
+              </p>
+              <p class="view-github"><a href="https://github.com/orancanoren/learnoran">View on GitHub <img src="images/github-logo.png"/></a></p>
+            </td>
+          </tr>
+        </table>
+      </div>
 
     <!-- parallax 1 -->
     <div class="parallax-container" style="margin-top: 30px">
