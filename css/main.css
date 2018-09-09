@@ -69,13 +69,29 @@ a:hover {
   height: 200px;
 }
 
-.view-github {
-  color: #5e5e5e;
-  text-align: right;
-  margin-right: 10px;
+.parallax img {
+  max-width: 4000px;
+  height: 400px;
+  background-repeat: repeat-x;
 }
 
-.view-github img {
+.right {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.project-link {
+  color: #08a85d;
+  font-weight: 500;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.project-link img {
   width: 20px;
   height: 100%;
   position: relative;
