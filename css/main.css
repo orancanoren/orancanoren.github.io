@@ -1,3 +1,38 @@
+.introduction {
+  margin-bottom: 30px;
+}
+
+#abstract-image {
+  background: url('../images/black_white_pattern.jpg');
+  height: 80px;
+  width: 100%;
+  background-size: 10%;
+}
+
+#cartoon-oran-wrapper {
+  height: 402px;
+  background: #b3dced; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #b3dced 0%, #29b8e5 70%, #29b8e5 70%, #29b8e5 81%, #bce0ee 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #b3dced 0%,#29b8e5 70%,#29b8e5 70%,#29b8e5 81%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #b3dced 0%,#29b8e5 70%,#29b8e5 70%,#29b8e5 81%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#cartoon-oran-wrapper img {
+  position: absolute;
+  width: 500px;
+  margin-top: -50px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  display: block;
+}
+
+main {
+  background-color: #2d3436;
+}
+
 #oname {
   font-weight: 400;
   font-size: 34px;
@@ -35,12 +70,17 @@ main {
 }
 
 #bold-name {
-  font-weight: 300;
+  font-weight: 400;
   font-size: 28px;
 }
 
 p {
   font-weight: 200;
+  color: white;
+}
+
+li {
+  color: white;
 }
 
 a {
@@ -52,8 +92,9 @@ a:hover {
 }
 
 .sub-text {
-  font-weight: 200;
-  font-size: 16px;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ef1346;
 }
 
 .card-panel {
@@ -62,7 +103,8 @@ a:hover {
 
 .heading {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
+  color: white;
 }
 
 .parallax-container {
